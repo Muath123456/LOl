@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Portfolio</title>
+    <style>
+        /* General Styling */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #ea0d0d;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            text-align: center;
+            overflow-x: hidden;
+        }
+
+        .container {
+            width: 80%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 50px 0;
+        }
+
+        header {
+            margin-bottom: 50px;
+        }
+
+        .profile-pic {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            border: 5px solid #0b0e11;
+            object-fit: cover;
+            margin-bottom: 20px;
+            transition: transform 0.3s ease;
+        }
+
+        .profile-pic:hover {
+            transform: scale(1.1);
+        }
+
+        h1 {
+            font-size: 3em;
+            margin-bottom: 5px;
+            color: #0d141c;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .title {
+            font-size: 1.5em;
+            color: #a93c3c;
+            margin-bottom: 10px;
+        }
+
+        .location {
+            font-size: 1.1em;
+            color: #772222;
+        }
+
+        /* About Me Section */
+        section {
+            margin-bottom: 60px;
+        }
+
+        h2 {
+            font-size: 2.5em;
+            color: #0f1216;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+        }
+
+        .about p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Skills Section */
+        .skills ul {
+            display: flex;
+            justify-content: center;
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .skills li {
+            background-color: #010810;
+            color: rgb(214, 24, 24);
+            padding: 15px 25px;
+            margin: 5px;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+        }
+
+        .skills li:hover {
+            transform: translateY(-5px);
+            background-color: #0a0e13;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Projects Section */
+        .projects {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .projects .project {
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin: 10px;
+            width: 300px;
+            text-align: left;
+            transition: transform 0.3s ease;
+        }
+
+        .projects .project:hover {
+            transform: scale(1.05);
+        }
+
+        .projects .project h3 {
+            color: #0a0b0c;
+            margin-bottom: 10px;
+        }
+
+        .projects .project p {
+            font-size: 1em;
+            color: #555;
+        }
+
+        .projects .project a {
+            text-decoration: none;
+            color: #091018;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .projects .project a:hover {
+            color: #0b1015;
+        }
+
+        /* Contact Section */
+        .contact button {
+            padding: 12px 30px;
+            background-color: #050c14;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .contact button:hover {
+            background-color: #131516;
+        }
+
+        #contact-info {
+            margin-top: 20px;
+            font-size: 1.2em;
+            display: none;
+        }
+
+        .contact p {
+            font-size: 1.1em;
+            color: #555;
+        }
+
+        .contact a {
+            text-decoration: none;
+            color: #021020;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .contact a:hover {
+            color: #021120;
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                transform: translateY(50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        section {
+            animation: fadeInUp 1s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Header Section -->
+        <header>
+            <img src="C:\Users\nwral\OneDrive\الصور\dragon-game-of-thrones-black-background-3840x2160-8379.jpg" alt="Profile Picture" class="profile-pic">
+            <h1>Your Name</h1>
+            <p class="title">Creative Web Developer</p>
+            <p class="location">Location: City, Country</p>
+        </header>
+
+        <!-- About Me Section -->
+        <section class="about">
+            <h2>About Me</h2>
+            <p>Hello! I'm a creative and enthusiastic web developer with a passion for building visually stunning and user-friendly websites. With a background in design and coding, I enjoy crafting innovative solutions that drive success. Let's build something amazing together!</p>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>Node.js</li>
+            </ul>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="projects">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>Portfolio Website</h3>
+                <p>A modern and responsive portfolio website built using HTML, CSS, and JavaScript.</p>
+                <a href="#">View Project</a>
+            </div>
+            <div class="project">
+                <h3>Online Store</h3>
+                <p>An e-commerce platform with full functionality built with React and Node.js.</p>
+                <a href="#">View Project</a>
+            </div>
+            <div class="project">
+                <h3>Blog Platform</h3>
+                <p>A personal blog platform built with a focus on clean design and user experience.</p>
+                <a href="#">View Project</a>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact">
+            <h2>Contact Me</h2>
+            <button onclick="showContactInfo()">Show Contact Info</button>
+            <div id="contact-info">
+                <p>Email: your-email@example.com</p>
+                <p>Phone: +123456789</p>
+                <p>LinkedIn: <a href="#">Your LinkedIn</a></p>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        function showContactInfo() {
+            var contactInfo = document.getElementById("contact-info");
+            if (contactInfo.style.display === "none") {
+                contactInfo.style.display = "block";
+            } else {
+                contactInfo.style.display = "none";
+            }
+        }
+    </script>
+
+</body>
+</html>
+
+
